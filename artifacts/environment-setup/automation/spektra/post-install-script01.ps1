@@ -80,8 +80,8 @@ function CreateLabFilesDirectory
 function CreateCredFile($azureUsername, $azurePassword, $azureTenantID, $azureSubscriptionID, $deploymentId)
 {
   $WebClient = New-Object System.Net.WebClient
-  $WebClient.DownloadFile("https://raw.githubusercontent.com/solliancenet/security-workshop/master/artifacts/environment-setup/spektra/AzureCreds.txt","C:\LabFiles\AzureCreds.txt")
-  $WebClient.DownloadFile("https://raw.githubusercontent.com/solliancenet/security-workshop/master/artifacts/environment-setup/spektra/AzureCreds.ps1","C:\LabFiles\AzureCreds.ps1")
+  $WebClient.DownloadFile("https://raw.githubusercontent.com/solliancenet/workshop-template/master/artifacts/environment-setup/automation/spektra/AzureCreds.txt","C:\LabFiles\AzureCreds.txt")
+  $WebClient.DownloadFile("https://raw.githubusercontent.com/solliancenet/workshop-template/master/artifacts/environment-setup/automation/spektra/AzureCreds.ps1","C:\LabFiles\AzureCreds.ps1")
 
   (Get-Content -Path "C:\LabFiles\AzureCreds.txt") | ForEach-Object {$_ -Replace "ClientIdValue", ""} | Set-Content -Path "C:\LabFiles\AzureCreds.ps1"
   (Get-Content -Path "C:\LabFiles\AzureCreds.txt") | ForEach-Object {$_ -Replace "AzureUserNameValue", "$azureUsername"} | Set-Content -Path "C:\LabFiles\AzureCreds.txt"
@@ -155,7 +155,7 @@ $rg = Get-AzResourceGroup | Where-Object { $_.ResourceGroupName -like "*-wssecur
 $resourceGroupName = $rg.ResourceGroupName
 $deploymentId =  (Get-AzResourceGroup -Name $resourceGroupName).Tags["DeploymentId"]
 
-$url = "https://raw.githubusercontent.com/solliancenet/workshop-template/master/artifacts/environment-setup/spektra/deploy.parameters.post.json"
+$url = "https://raw.githubusercontent.com/solliancenet/workshop-template/master/artifacts/environment-setup/automation/spektra/deploy.parameters.post.json"
 $output = "c:\LabFiles\parameters.json";
 $wclient = New-Object System.Net.WebClient;
 $wclient.CachePolicy = new-object System.Net.Cache.RequestCachePolicy([System.Net.Cache.RequestCacheLevel]::NoCacheNoStore);
