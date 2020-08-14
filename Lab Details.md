@@ -19,35 +19,43 @@
 
     ![Launch your lab.](/media/web-lab-launching.png "Launch your lab")
 
-    > **NOTE** In some cases, this can take up to 45 minutes depending on the workshop you are attending.
+    > **NOTE** In some cases, this can a significant amount of time depending on the workshop you are attending. For long setup times, you will received an email notification that your lab is ready
 
-6. Once complete, you will be presented with your Azure Credentials to login to your lab environment.
+    ![Lab is ready email.](/media/email-lab-ready.png "Review the lab is ready email")
 
-    ![Launch lab.](/media/todo.png "click the Launch Lab link")
+6. Once complete, you can browse to the lab using the email or refresh the page. You will either be presented with your Azure Credentials to login to your lab environment or a page that contains your lab overview.
 
-7. In most cases you will start of with a Virtual Machine that is part of your lab environment. You should reference your lab instructions with how to login to the virtual machine.
+    ![Launch lab.](/media/web-lab-setup-complete.png "click the Launch Lab link")
 
-    ![Launch lab.](/media/todo.png "click the Launch Lab link")
+    ![Launch lab.](/media/web-main-page.png "click the Launch Lab link")
 
-8. In the absence of a virtual machine you will likely use the provided credentials to simply login to the [Azure Portal](https://portal.azure.com) where the lab resources have been provisioned for you.
+    > **NOTE** Both page layouts will inform you of the time remaining for your lab. It is important that you keep track of this as your lab will be de-provisioned at the end of this time.
 
-    ![Launch lab.](/media/todo.png "click the Launch Lab link")
+7. In many cases you will start off with a Virtual Machine that is part of your lab environment. As you can see from the above screenshots, the login information will be presented to you. If you have a `Lab Guide` tab, then your credentials will be on the `Lab Environment` tab.
+
+8. In the absence of a virtual machine you will likely use the provided credentials to simply login to the [Azure Portal](https://portal.azure.com) where the necessary lab resources have been provisioned for you.
 
 ## Lab Exercises
 
-1. Once logged in, the lab environment will present you with a navigation section on the right side of the browse window.
+1. Once logged in, the lab environment will present you with a Lab guide navigation section. If your lab comes with detailed instructions, you will see the **Next** button at the bottom of the Lab Guide tab.
+2. Select **Next** to browse through the labs instructions.
 
-    ![Launch lab.](/media/todo.png "click the Launch Lab link")
+    ![Launch lab.](/media/web-next-page.png "click the Launch Lab link")
 
-2. You can use this navigation window to copy/paste items from the lab documents into the virtual machine.
+3. If appropriate, you can use this navigation window to copy/paste items from the lab documents into the virtual machine.
 
-    ![Launch lab.](/media/todo.png "click the Launch Lab link")
-
-3. You are also free to browse directly to the azure portal and github hosting the labs to perform your labs if that is easier for you.
+4. You are also free to browse open an RDP session directly to the virtual machine and browse directly to the Azure Portal and github hosting the labs to perform your labs if that is easier for you.
 
 ## Microsoft Teams Environment
 
 1. If you are part of a larger virtual conference, you will also use your credentials to login to Microsoft Teams desktop or the web version.
+
 2. Once logged in, you should see the main conference channel and any workshop teams and channels you are attending.
 
-    ![Launch lab.](/media/todo.png "click the Launch Lab link")
+    ![Teams channels view.](/media/web-teams-channels.png "Use Microsoft Teams to find your teams and channels")
+
+3. If you so choose, you can change your image using the icon in the top right corner.
+
+    > **NOTE** Please do not post images or change your name to anything that others may deed offensive. If your info is reported to be such, you may be be asked to change it or potentially be removed from the training.
+
+    ![Change your picture.](/media/web-teams-change-picture.png "Change your picture")
